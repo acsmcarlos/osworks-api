@@ -12,4 +12,5 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
 	// criar query method (metodos de pesquisa) pelo nome
 	List<Cliente> findByNome(String nome);
+	Cliente findByEmail(String email);
 }
